@@ -61,18 +61,18 @@ else:
 while diffLevel == None:
     diffLevel =  input("Choose your difficulty Level! Easy, Normal, or Hard\n")
     # To fix your issue, change this to an if-elif-else block.  The else: block should be a default value if you cannot identify the difficulty. 
-    if diffLevel == "Easy":
+    if diffLevel == "easy":
         print(f"You need to guess a number from 1-10")
         rangeMin = 1
         rangeMax = 10
         numAttempts = 5
     
-    elif diffLevel == "Normal":
+    elif diffLevel == "normal":
         print(f"You need to guess a number from 1-20")
         rangeMin = 1
         rangeMax = 20
         numAttempts = 5
-    elif diffLevel == "Hard":
+    elif diffLevel == "hard":
         print(f"You need to guess a number from 1-100")
         rangeMin = 1
         rangeMax = 100
