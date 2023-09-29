@@ -98,7 +98,7 @@ while playerScore != 3 and cpuScore != 3: # MATCH STARTS HERE
     # pass # Tells Python to skip this block without giving an error.
     print(f"Player Score: {playerScore}\nCPU Score: {cpuScore}\n")
     secretNumber = random.randint(rangeMin, rangeMax)
-    print(secretNumber)
+    #print(secretNumber)
     numGuesses = 0
     for guesses in range(numAttempts): # ROUND STARTS HERE 
         print(f"You have {numAttempts - numGuesses} guesses left this round\n")
