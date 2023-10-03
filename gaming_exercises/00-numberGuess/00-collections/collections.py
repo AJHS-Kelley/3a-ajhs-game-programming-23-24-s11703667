@@ -1,4 +1,4 @@
-# Collections Examples, London Baldwin, v0.1c
+# Collections Examples, London Baldwin, v0.1d
 
 # LIST -- ORDERED, CHANGEABLE, ALLOWS DUPLICATE VALUES
 breakfastFoods = ["Bacon", "Waffles" "Pancakes", "Cereal" , "Milk"]
@@ -23,3 +23,9 @@ classGPA = [3.14, 2.25, 1.74, 0.99, 4.25]
 # print(breakfastFoods[-1])
 # print(testScores[-1])
 # print(classGPA[-1])
+
+# Pause - WYOC -- Acess the 3rd Element in Each List
+# print(breakfastFoods[2])
+# print(testScores[2])
+# print(classGPA[2])
+
