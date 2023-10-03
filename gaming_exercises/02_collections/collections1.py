@@ -6,3 +6,8 @@ while len(playerInventory) < 10:
 playerInventory.sort()
 # .whatever() is known as a METHOD. IT MEANS "DO THIS TO THAT".
 print(playerInventory)
+
+# REMOVE ITEMS
+while len(playerInventory) > 5:
+
+    playerInventory.remove(item)
