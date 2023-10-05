@@ -18,12 +18,25 @@
 weaponList = [
     False, # Flame thrower
     False, # Pistol
-    False, # Swiss blade
+    True, # Swiss blade
     False, # Bazooka
-    False # Banana
+    True # Banana
 ]
 # each item/value in a list is an ELEMENT
 # the location of each element in the list is the INDEX
 # first element is index[0]
 # shortcut to last element is index[-1]
-
+weaponNum = 0
+while weaponNum < len(weaponList):
+    if weaponNum == 0 and weaponList[0] == True:
+        print("Your Character is equipped with a Flame thrower.\n")
+    if weaponNum == 0 and weaponList[1] == True:
+        print("Your Character is equipped with a Pistol.\n")
+    if  weaponNum == 0 and weaponList[2] == True:
+        print("Your Character is equipped with a Swiss Blade.\n")
+    if weaponNum == 0 and weaponList[3] == True:
+        print("Your Character is equipped with a Bazooka.\n")
+    if weaponNum == 0 and weaponList[4] == True:
+        print("Your Character is equipped with a Banana.\n")
+    weaponNum += 1
+    
