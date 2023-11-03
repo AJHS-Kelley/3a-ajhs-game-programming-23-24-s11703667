@@ -71,4 +71,8 @@ def displayBoard(missedLetters, correctLetters, secretWord):
             # The : character is used to SLICE strings into pieces.
             # [:i] means slicefrom the start until index i
             # [i+1:] means slice from i+1 until the END
+            # [startingPoint:endingPoint]
             
+    for letter in blanks:
+        print(letter, end = ' ')
+    print()
