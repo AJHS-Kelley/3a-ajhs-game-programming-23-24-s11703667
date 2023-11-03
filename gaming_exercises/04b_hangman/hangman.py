@@ -1,4 +1,4 @@
-wordList = ['cat, hat, bat, map, cap, ']
+wordList = ['cat hat bat map cap dog hog log ear tin high tear drill wait hate cake reup love']
 
 
 
@@ -76,3 +76,18 @@ def displayBoard(missedLetters, correctLetters, secretWord):
     for letter in blanks:
         print(letter, end = ' ')
     print()
+
+def getGuess(alreadyGuessed):
+    # Only allow: single character, A-Z only, not guessed already.
+    while True: # default 'infinite' loop
+        print('Please guess a letter and press enter')
+        guess = input()
+        guess = guess.lower()
+        if len(guess) != 1:
+            print("Please  enter a single letter.\n")
+        elif guess not in 'abcdefghijklmnopqrstuvwxyz':
+            print("Please enter an English Letter only.")
+        elif guess in alreadyGuessed:
+            print('Already guessed. Please guess a different letter!')
+        else:
+            return guess
