@@ -1,5 +1,9 @@
-wordList = ['cat hat bat map cap dog hog log ear tin high tear drill wait hate cake reup love']
+import random
+wordList = 'cat hat bat map cap dog hog log ear tin high tear drill wait hate cake reup love hold freedom governor rights stairs word minister students meaning junior men tree'
+# .split() will split a string into seperate elements
 
+# VARIABLE_NAMES that are ALL CAPS are CONSTANTS
+HANGMAN_BOARD = []
 
 
 
@@ -132,3 +136,10 @@ while True: # 99% of the time the loop is done this way.
             print("You have lost due to using all guess.\n")
             print("The secret word was" + secretWord)
             gameIsDone = True
+
+    if gameIsDone:
+        if playAgain():
+            secretWord = getRandomWord(wordList)
+            missedLetters = ""
+            correctLetters = ""
+            gameIsDone = False
