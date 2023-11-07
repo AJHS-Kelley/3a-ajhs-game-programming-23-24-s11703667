@@ -121,6 +121,14 @@ while True: # 99% of the time the loop is done this way.
             if secretWord[i] not in correctLetters:
                 foundAllLetters = False
                 break
-            if foundAllLetters == True:
-                print("Winner Winner Chicken Dinner!")
-                gameIsDone = True
+        if foundAllLetters == True:
+            print("Winner Winner Chicken Dinner!")
+            gameIsDone = True
+    else: # MISSED LETTER GUESS
+        missedLetters = missedLetters + guess
+
+        if len(missedLetters) == len(HANGMAN_BOARD) - 1:
+            displayBoard(missedLetters, correctLetters, secretWord)
+            print("You have lost due to using all guess.\n")
+            print("The secret word was" + secretWord)
+            gameIsDone = True
