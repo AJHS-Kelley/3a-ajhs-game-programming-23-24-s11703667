@@ -103,3 +103,24 @@ correctLetters = ""
 secretWord = getRandomWord(wordList)
 print("Testing Secret Word:" + secretWord)
 gameIsDone = False
+
+# GAME LOOP BEGINS HERE
+while True: # 99% of the time the loop is done this way.
+    # TWO WAYS TO EXIT while True: return OR break
+    # DISPLAY THE BOARD
+    displayBoard(missedLetters, correctLetters, secretWord)
+
+    guess = getGuess(missedLetters + correctLetters)
+
+    if guess in secretWord: # Is the guess in the secretWord?
+        correctLetters = correctLetters + guess
+
+        # CHECK FOR VICTORY
+        foundAllLetters = True
+        for i in range(len(secretWord)):
+            if secretWord[i] not in correctLetters:
+                foundAllLetters = False
+                break
+            if foundAllLetters == True:
+                print("Winner Winner Chicken Dinner!")
+                gameIsDone = True
