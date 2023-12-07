@@ -1,8 +1,7 @@
 # London Baldwin, Fuctions Example, v0.0
 import random
 playerName = "Mario Luigi Toad Peach Yoshi Bowser Wario Daisy".split()
-playerWorld = ""
-playerLives = ""
+playerWorld = "Rainbow Road, Toad circuit, Yoshi Valley ".split(",")
 
 def getPlayer(playerName):
     while True: 
@@ -14,3 +13,5 @@ def getPlayer(playerName):
         else:
             return name
         
+playerLives = 5
+
