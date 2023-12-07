@@ -1,5 +1,5 @@
 import random
-wordList = 'cat hat bat map cap dog hog log ear tin high tear drill wait hate cake reup love hold freedom governor rights stairs word minister students meaning junior men tree'
+wordList = 'cat hat bat map cap dog hog log ear tin high tear drill wait hate cake reup love hold freedom governor rights stairs word minister students meaning junior men tree'.split()
 # .split() will split a string into seperate elements
 
 # VARIABLE_NAMES that are ALL CAPS are CONSTANTS
