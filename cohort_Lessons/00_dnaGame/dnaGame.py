@@ -47,6 +47,24 @@ def checkSequence(dnaSequence: str, rnaSequence: str) -> bool:
             isMatch = True
     return isMatch
 
+def calcScore(time: float, dnaSequence: str) -> int:
+    score = 0
+    if time < 1.0:
+        score+= 10000
+    elif time < 5.0:
+        score+= 1000
+    elif time < 10.0:
+        score+= 100
+    else:
+        score+= 10
+
+
+# DNA Sequence Length Multiplier
+# If you want to give a bonus, make the multiplier > 1.0
+# If you want to penalize, make the multiplier < 1.0
+
+
+
 dna = genDNA()
 print(dna)
 
