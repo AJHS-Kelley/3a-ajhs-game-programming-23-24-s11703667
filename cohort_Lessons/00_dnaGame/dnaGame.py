@@ -24,7 +24,7 @@ def genDNA() -> str:
 def genRNA(dnaSequence: str) -> tuple: 
     print(f"The DNA Sequence is {dnaSequence}.\n ")
     print(" You need to enter the correct RNA sequence based on this DNA sequence.\n")
-    print("Remember, the RNA base will have a base to match with an base from DNA.\n")
+    print("Remember, the RNA base will have a U base to match with an A base from DNA.\n")
     # Start Timer
     rnaStart = time.time()
     rnaSequence = input("Please type the corrent RNA sequence with no spaces. Then press enter.\n")
@@ -48,9 +48,8 @@ def checkSequence(dnaSequence: str, rnaSequence: str) -> bool:
     return isMatch
 
 dna = genDNA()
-# print(dna)
+print(dna)
 
 rna = genRNA(dna)
-# print(rna)
-
-print(checkSequence(dna, rna))
+print(rna)
+print(checkSequence(dna, rna[0]))
