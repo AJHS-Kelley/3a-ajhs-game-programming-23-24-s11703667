@@ -9,7 +9,8 @@ from random import choice # BRING JUST THE TOOL YOU NEED
 dnaBases = ["A", "T", "G", "C"] # Adenine, Thymine, Guanine, Cytosine
 
 def gameIntro() -> None:
-    pass
+    print("Hello Welcome to the DNA Replicator Game!\n")
+    print("In This Game You Will have to Retype the Automated DNA Base as fast as you can!\n")
 
 def genDNA() -> str:
     basesGenerated = 0
