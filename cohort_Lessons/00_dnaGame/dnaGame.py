@@ -37,12 +37,17 @@ def checkSequence(dnaSequence: str, rnaSequence: str) -> bool:
         if eachBase == "U" and dnaSequence != "T":
             isMatch = False
             break
-        elif C Base
-        elif T Base
-        elif G Base
+        elif eachBase == "C" and dnaSequence != "G":
+            isMatch = False
+            break
+        elif eachBase == "T" and dnaSequence != "A":
+            isMatch = False
+            break
+        elif eachBase == "G" and dnaSequence != "C":
+            isMatch = False
+            break
         else:
-
-
+            isMatch = True
     return isMatch
 
 dna = genDNA()
